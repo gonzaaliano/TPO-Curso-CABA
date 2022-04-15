@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #000000;
+    label {
+        font-size: 35px;
+        font-weight: bold;
+        color: #FEFFFE;
+        padding: 0 100px;
+        line-height: 80px;
+    }
+    ul {
+        float: right;
+        margin-right: 40px;
+        li {
+            display: inline-block;
+            margin: 0 8px;
+            line-height: 80px;
+            a {
+                color: #FEFFFE;
+                font-size: 18px;
+                text-transform: uppercase;
+                border: 1px solid transparent;
+                padding: 7px 10px;
+                border-radius: 3px;
+                &:hover {
+                    border: 1px solid #c6ff00;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+    #icon {
+        color: #FEFFFE;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+@media (max-width:1048px) {
+    .logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav {
+        ul {
+            margin-right: 20px;
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:909px) {
+    nav {
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #c6ff00;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+                a {
+                    color: #181D27;
+                    font-size: 20px;
+                }
+            }
+        }
+        #icon {
+            display: block;
+        }
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+@media screen and(max-width:600px) {
+    nav {
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #c6ff00;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+        #icon {
+            padding: 0;
+            margin-right: 35px;
+            display: block;
+        }
+        .logo {
+            font-size: 24px;
+            padding: 0;
+            margin-left: 15px;
+        }
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+@media screen and(max-width:300px) {
+    nav {
+        .logo {
+            font-size: 25px;
+        }
+    }
+}
+
+#inicio {
+    background-image: url(/assets/gimnasio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-color: #c6ff00;
+    .container-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 40%;
+            height: 350px;
+            border: 1px solid #000000;
+            text-align: center;
+            label {
+                font-size: 25px;
+                margin-right: 5px;
+                textarea {
+                    margin: 30px;
+                }
+            }
+            input[type=text] {
+                width: 40%;
+                padding-right: 100px;
+            }
+        }
+    }
+}
