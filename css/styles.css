@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -237,6 +238,8 @@ nav #icon {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #paquetes .cards {
@@ -313,6 +316,7 @@ nav #icon {
   letter-spacing: .1rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1030px) {
@@ -329,6 +333,40 @@ nav #icon {
             align-items: center;
     height: auto;
   }
+}
+
+#reseñas {
+  text-align: center;
+}
+
+#reseñas .atletas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#reseñas .atletas img {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#reseñas .atletas p {
+  width: 70%;
 }
 
 #contact {
