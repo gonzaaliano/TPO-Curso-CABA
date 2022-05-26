@@ -7,58 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/34e19072c9.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src=""></script>
+
     <title>Power Stroke GYM</title>
 </head>
 
 <body>
-    <nav>
-        <label class="logo">POWERSTROKE GYM</label>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">La empresa</a></li>
-            <li><a href="">Paquetes</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
-    </nav>
+    <!-- Barra navegación -->
+    <header class="nav-scrolled">
+        <nav>
+            <label class="logo">POWERSTROKE GYM</label>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="#descripcion">La empresa</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+
+        <div class="titular">
+            <h1>GIMNASIOS DE ALTO RENDIMIENTO</h1>
+            <a href="#contacto">INSCRIBIRSE</a>
+        </div>
+
+    </header>
+
+
     <section id="inicio">
         <div class="texto-intro">
-            <h1 class="animate__animated animate__fadeInDown">Nuestro objetivo es brindar el mejor entrenamiento para que alcanzes el máximo rendimiento en tu disciplina</h1>
+            <h1 class="animate__animated animate__fadeInDown animate__slow animate__delay-2s">Nuestro objetivo es brindar el mejor entrenamiento y apoyo económico para que alcanzes el máximo rendimiento en tu disciplina y competir representando al país.</h1>
         </div>
-        <!-- <img src="/assets/gimnasio-3.jpg" alt="gimnasio"> -->
+        <img src="/assets/gim3.jpg" alt="foto-mujer-entrenando">
     </section>
+
+    <!-- DESCRIPCION PRINCIPAL DEL GIMNASIO -->
     <section id="descripcion">
         <div class="texto-descripcion">
-            <h1 class="animate__animated animate__zoomInLeft">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam laborum porro aliquam alias quos architecto eius sit eaque molestiae animi facere neque sed molestias amet dolorum dolores, hic aut?</h3>
+            <h1 class="animate__animated animate__zoomInLeft">Tecnología, datos y entrenadores de máximo nivel.</h1>
+            <h3>A través del análisis de datos de tu entrenamiento, buscamos mejorar tus aspectos negativos y fortalecer los positivos para que tengas el mejor rendimiento posible en tu disciplina.</h3>
+            <h3>Los mejores entrenadores del mundo, nutricionistas deportivos, las mejores instalaciones y máquinas de última generación.</h3>
         </div>
         <div class="iframe-div">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/N82KJBnUOVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
-    <section id="entrenamientos">
-        <h1></h1>
-    </section>
-    <section id="paquetes">
+
+    <!-- ACTIVIDADES PRINCIPALES DEL GIMNASIO -->
+    <section id="actividades">
         <div class="cards">
             <div class="left-column background1-left-column">
                 <h2>MUSCULACIÓN</h2>
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
-
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Planes de entrenamiento y pretemporada</h3>
+                <p>Musculación con máquinas y aparatos de última tecnología</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
@@ -68,14 +79,9 @@
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
-
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Hatha Yoga</h3>
+                <p>El hatha yoga es el yoga más difundido en todo el mundo, y es conocido por sus asanas o posiciones corporales. Se trata de un sistema de posturas físicas cuyo propósito es lograr que el cuerpo esté apto para la meditación</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
@@ -85,14 +91,9 @@
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
-
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Planes de entrenamiento y pretemporada</h3>
+                <p>Entrenamientos con sparrings profesionales para elevar tu nivel al máximo y los mejores planes de entrenamiento.</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
@@ -102,14 +103,9 @@
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
-
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Planes de entrenamiento y pretemporada</h3>
+                <p>Entrenadores con certificado avalado por la NBA y canchas con medidas profesionales</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
@@ -119,14 +115,10 @@
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
 
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Planes de entrenamiento y pretemporada</h3>
+                <p>Asociados con la escuela del Real Madrid y Boca Juniors, somos el principal nexo con ambos clubes y brindamos asesoramiento, entrenamientos, seguimiento deportivo.</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
@@ -136,56 +128,402 @@
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
             </div>
             <div class="right-column">
-                <div>
-                    <h4>Lorem</h4>
-                    <h6>Ipsum</h6>
-                </div>
-
-                <h3>Aprende GitHub en 3 meses</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus perferendis ab, ad quidem assumenda quod laboriosam quis et deleniti debitis quae.</p>
-                <button class="button">Cotizacion</button>
+                <h3>Planes de entrenamiento y pretemporada</h3>
+                <p>Trabajamos junto a la Rafa Nadal Academy y compartimos tanto su filosofía como profesionalismo.</p>
+                <button class="button">Horarios</button>
             </div>
 
         </div>
     </section>
+
+
+    <!-- GRILLA HORARIOS -->
+    <section id="horarios">
+        <h1 class="horarios-h1">HORARIOS</h1>
+        <div class="contenedor-horarios">
+            <table>
+                <th>DÍAS</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+                <th>SÁBADO</th>
+                <tr class="gris">
+                    <td class="horarios">9:00-12:00hs</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>Yoga</p>
+                        <p>Martin Freeman</p>
+                    </td>
+                    <td>
+                        <p>Boxeo</p>
+                        <p>Freddie Roach</p>
+                    </td>
+                    <td>
+                        <p>Musculacion</p>
+                        <p>Jason Todd</p>
+                    </td>
+                    <td>
+                        <p>Musculacion</p>
+                        <p>Jason Todd</p>
+                    </td>
+
+                </tr>
+                <tr class="blanco">
+                    <td class="horarios">13:00hs-15:00hs</td>
+                    <td>
+                        <p>Tenis</p>
+                        <p>Javier Frana</p>
+                    </td>
+                    <td>
+                        <p>Basquet</p>
+                        <p>Julio Lamas</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                </tr>
+                <tr class="gris">
+                    <td class="horarios">15:00hs-18:00hs</td>
+                    <td>
+                        <p>Tenis</p>
+                        <p>Javier Frana</p>
+                    </td>
+                    <td>
+                        <p>Basquet</p>
+                        <p>Julio Lamas</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                </tr>
+                <tr class="blanco">
+                    <td class="horarios">19:00hs-21:00hs</td>
+                    <td>
+                        <p>Tenis</p>
+                        <p>Javier Frana</p>
+                    </td>
+                    <td>
+                        <p>Basquet</p>
+                        <p>Julio Lamas</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                </tr>
+                <tr class="gris">
+                    <td class="horarios">21:00hs-23:00hs</td>
+                    <td>
+                        <p>Tenis</p>
+                        <p>Javier Frana</p>
+                    </td>
+                    <td>
+                        <p>Basquet</p>
+                        <p>Julio Lamas</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                    <td>
+                        <p>Musculación</p>
+                        <p>Jason Todd</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="horarios-mobile">
+        <div class="contenedor-horarios-mobile">
+            <div>
+                <h1 class="dias">HORARIOS</h1>
+                <p class="dias">DÍAS</p>
+                <p class="dias">LUNES</p>
+
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+                <p class="dias">MARTES</p>
+
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+                <p class="dias">MIERCOLES</p>
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+                <p class="dias">JUEVES</p>
+
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+                <p class="dias">VIERNES</p>
+
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+                <p class="dias">SÁBADO</p>
+
+                <p class="actividad">Yoga</p>
+                <p>Martin Freeman</p>
+
+                <p class="actividad">Boxeo</p>
+                <p>Freddie Roach</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+                <p class="actividad">Musculacion</p>
+                <p>Jason Todd</p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="horarios-fin"></div>
+    <!-- RESEÑAS ATLETAS PROFESIONALES -->
     <section id="reseñas">
-        <h2>Confían en nosotros:</h2>
-        <div class="slider_container">
-            <i class="fa-solid fa-arrow-left-long" id="before"></i>
 
-            <section class="slider_body" id="1">
-                <div class="atletas">
-                    <img src="/assets/facu-campazzo.jpg" alt="facundo-campazzo">
-                    <h4>Facundo Campazzo</h4>
-                    <h5>Jugador Profesional de Básquet, NBA, Euroliga y Selección Argentina</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae laudantium voluptate nam incidunt similique esse iusto laborum nostrum odit iste numquam eius voluptatem amet ipsa, labore ducimus tempore error.</p>
+        <h1>Los mejores atletas profesionales argentinos nos eligen por nuestra experiencia y profesionalismo</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonio-container">
+                        <p>" Un gimnasio espléndido con las mejores instalaciones que uno puede pedir y además un gran equipo de entrenadores que durante mi pretemporada me acompañaron en todos los aspectos de mi deporte y en como potenciar mi juego "</p>
+                    </div>
+                    <div class="details">
+                        <div class="imgbox">
+                            <img src="/assets/facu-campazzo.jpg" alt="" srcset="">
+                        </div>
+                        <h3>Facundo Campazzo<br><span>Jugador NBA</span></h3>
+                    </div>
                 </div>
-            </section>
+                <div class="swiper-slide">
+                    <div class="testimonio-container">
+                        <p>"Llegué a este maravilloso lugar y me sentí en casa desde el primer día, el departamento de nutrición es de clase mundial y te brindan los mejores consejos para poder seguir manteniendo el mejor rendimiento posible."</p>
+                    </div>
+                    <div class="details">
+                        <div class="imgbox">
+                            <img src="/assets/paula-pareto.jpg" alt="" srcset="">
+                        </div>
+                        <h3>Paula Pareto<br><span>Medallista de Oro en Judo</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonio-container">
+                        <p>"Cuando me anoté, pensé que iba a ser un gimnasio como cualquier otro, pero el trato con sus atletas seas profesional o no es brillante, con mucho análisis de datos logré mejorar muchos aspectos del tenis con los que no me sentía
+                            comodo"
+                        </p>
+                    </div>
+                    <div class="details">
+                        <div class="imgbox">
+                            <img src="/assets/seba-baez.jpg" alt="" srcset="">
+                        </div>
+                        <h3>Sebastián Baez<br><span>Tenista profesional</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonio-container">
+                        <p>"Powerstroke generó un cambio radical en mi carrera profesional tanto en mi alimentación y forma de entrenamiento, acá no te entrenas, si no que te enseñan como llevar tu cuerpo al máximo nivel sin tener que depender de un entrenador
+                            el 100% del tiempo."</p>
+                    </div>
+                    <div class="details">
+                        <div class="imgbox">
+                            <img src="/assets/brian-castaño.jpg" alt="" srcset="">
+                        </div>
+                        <h3>Brian Castaño<br><span>Boxeador Profesional</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonio-container">
+                        <p>"Tras mi fichaje por la Juventus supe que venía un gran desafío y me recomendaron este gran gimnasio, tuve una de mis mejores temporadas gracias a este centro de entrenamiento."</p>
+                    </div>
+                    <div class="details">
+                        <div class="imgbox">
+                            <img src="/assets/Dybala.jpg" alt="" srcset="">
+                        </div>
+                        <h3>Paulo Dybala<br><span>Futbolista de Juventus FC</span></h3>
+                    </div>
+                </div>
 
 
-            <i class="fa-solid fa-arrow-right-long" id="after"></i>
-        </div>
-
-        <!-- <div class="atletas">
-                <img src="/assets/facu-campazzo.jpg" alt="facundo-campazzo">
-                <h4>Facundo Campazzo</h4>
-                <h5>Jugador Profesional de Básquet, NBA, Euroliga y Selección Argentina</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae laudantium voluptate nam incidunt similique esse iusto laborum nostrum odit iste numquam eius voluptatem amet ipsa, labore ducimus tempore error.</p>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="atletas">
-                <img src="/assets/facu-campazzo.jpg" alt="facundo-campazzo">
-                <h4>Facundo Campazzo</h4>
-                <h5>Jugador Profesional de Básquet, NBA, Euroliga y Selección Argentina</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae laudantium voluptate nam incidunt similique esse iusto laborum nostrum odit iste numquam eius voluptatem amet ipsa, labore ducimus tempore error.</p>
-            </div> -->
-
-
-
-
     </section>
 
+    <section id="contacto">
+        <div class="container-contact">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contacto</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>
+                                Figueroa Alcorta, Buenos Aires
+                                Argentina
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="far fa-envelope"></i></span>
+                            <span class="emails">info@powerstrokegym.com</span>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-phone-alt"></i></span>
+                            <span>Teléfono: 1234-5678</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form id="form" action="https://formsubmit.co/franciscocallegari@callegariyasociadosabogados.com" method="POST" class="formulario">
+                    <h2>Dejános tu mensaje</h2>
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input name="name" id="name" type="text" required>
+                            <span>Nombre</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input name="surname" id="surname" type="text" required>
+                            <span>Apellido</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input name="email" id="email" type="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input name="phone" id="phone" type="number" required>
+                            <span>Teléfono</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="message" id="message" cols="1" rows="1" required></textarea>
+                            <span>Mensaje</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer-left">
+            <h2>POWERSTROKE GYM</h2>
+            <P>En POWERSTROKE GYM cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.</P>
+            <p>Copyright(c) 2022 POWERSTROKE GYM Todos los derechos reservados</p>
+        </div>
+
+        <div>
+            <h3>Atención al cliente</h3>
+            <h5>info.socios@powerstrokegym.com</h5>
+        </div>
+
+    </footer>
+
+    <!-- Barra navegación slider -->
     <script src="/js/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
