@@ -528,229 +528,168 @@ header .nav-scrolled {
     }
 }
 
-//SECCION CONTACTO
+
+/* ----- -----  FORMULARIO DE CONTACTO----- ----- */
+
 #contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #333;
-}
-
-.container-contact {
-    position: relative;
-    min-width: 1100px;
-    min-height: 550px;
-    display: flex;
-    z-index: 1000;
-}
-
-.container-contact .contactInfo {
-    position: absolute;
-    top: 3em;
-    width: 430px;
-    height: 580px;
-    background: #000;
-    z-index: 1;
-    padding: 3em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 1em 1.25em rgba(0, 0, 0, 0.15);
-    color: #FFF;
-    text-align: center;
-    h2 {
-        margin: 0;
-        font-size: 2em;
-        font-weight: 500;
-    }
-    ul.info {
-        position: relative;
-        margin: 1em 0;
-        text-align: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    span {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        color: #fff;
-    }
-}
-
-.container-contact .contactInfo ul.info li {
-    position: relative;
-    list-style: none;
-    display: flex;
-    margin: 1.5em 0;
-    cursor: pointer;
-    align-items: flex-start;
-}
-
-.container-contact .contactInfo ul.info li span:nth-child(1) {
-    width: 1em;
-    min-width: 1em;
-}
-
-.container-contact .contactInfo ul.info li span:nth-child(1) i {
+    background-color: #333;
     max-width: 100%;
-    filter: invert(1);
+    margin: auto;
+    padding: 40px;
 }
 
-.container-contact .contactForm {
-    position: absolute;
-    padding: 2em 1.5em;
-    padding-left: 19em;
-    margin-left: 10em;
-    width: calc(100% - 150px);
-    height: 100%;
-    background: #fff;
-    box-shadow: 0 1.5em 1.5em rgba(0, 0, 0, 0.25);
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.container-contact .contactInfo ul.info li span:nth-child(2) {
+.formulario__label {
     color: #FFF;
-    margin-left: 1em;
-    font-weight: 300;
-}
-
-.contactForm {
-    h2 {
-        margin: 0;
-        font-size: 1.5em;
-        font-weight: 500;
-    }
-}
-
-.container-contact .contactForm .formBox {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 1em;
-}
-
-.container-contact .contactForm .formBox .inputBox {
-    position: relative;
-    margin-bottom: 2.5em;
-}
-
-.container-contact .contactForm .formBox .inputBox.w50 {
-    width: 47%;
-}
-
-.container-contact .contactForm .formBox .inputBox.w100 {
-    width: 100%;
-}
-
-.container-contact .contactForm .formBox .inputBox input,
-.container-contact .contactForm .formBox .inputBox textarea {
-    width: 100%;
-    resize: none;
-    padding: 0.7em 0;
-    font-size: 1em;
-    font-weight: 300;
-    color: #333;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #777;
-}
-
-.container-contact .contactForm .formBox .inputBox textarea {
-    height: 9em;
-}
-
-.container-contact .contactForm .formBox .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 0.1em 0;
-    pointer-events: none;
-    font-size: 18px;
-    font-weight: 300;
-    transition: 0.3s;
-}
-
-.container-contact .contactForm .formBox .inputBox input:focus~span,
-.container-contact .contactForm .formBox .inputBox input:valid~span,
-.container-contact .contactForm .formBox .inputBox textarea:focus~span,
-.container-contact .contactForm .formBox .inputBox textarea:valid~span {
-    transform: translateY(-20px);
-    font-size: 0.8em;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: #000;
-    font-weight: 500;
-}
-
-.container-contact .contactForm .formBox .inputBox input[type="submit"] {
-    position: relative;
+    display: block;
+    font-weight: 700;
+    padding: 10px;
     cursor: pointer;
-    background-color: #000;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 80%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
     color: #FFF;
+    font-size: 1em;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
     border: none;
-    max-width: 9em;
-    padding: 0.8em;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
 }
 
-.container-contact .contactForm .formBox .inputBox input[type="submit"]:hover {
+.formulario__btn:hover {
     background-color: #c6ff00;
-    color: #000000;
+    color: #000;
     transition: .5s;
-    border-radius: 10px;
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
 }
 
 
-/*FORMULARIO DE CONTACTO RESPONSIVE*/
+/* ----- -----  Estilos para Validacion ----- ----- */
 
-@media screen and (max-width:1200px) {
-    .container-contact {
-        width: 90%;
-        min-width: auto;
-        margin: 20px;
-        .contactInfo {
-            top: 0;
-            height: 550px;
-            position: relative;
-            box-shadow: none;
-        }
-        .container .contactForm {
-            position: relative;
-            width: calc(100% - 350px);
-            padding-left: 0px;
-            margin-left: 0px;
-            padding: 40px;
-            height: 550px;
-            box-shadow: none;
-        }
-    }
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
 }
 
-@media screen and(max-width:991px) {
-    #contacto {
-        display: flex;
-        background: #b9b7b7;
-        .container-contact {
-            display: flex;
-            flex-direction: column-reverse;
-            .contactForm {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                flex-wrap: wrap;
-                padding: 1em;
-                margin: 0;
-            }
-            .contactInfo {
-                display: none;
-            }
-        }
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
     }
-    #contacto::before {
-        display: none;
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    .formulario__btn {
+        width: 100%;
     }
 }
 
