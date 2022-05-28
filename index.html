@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src=""></script>
@@ -40,15 +40,15 @@
 
 
     <section id="inicio">
-        <div class="texto-intro">
+        <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500" class="texto-intro">
             <h1 class="animate__animated animate__fadeInDown animate__slow animate__delay-2s">Nuestro objetivo es brindar el mejor entrenamiento y apoyo económico para que alcanzes el máximo rendimiento en tu disciplina y competir representando al país.</h1>
         </div>
-        <img src="/assets/gim3.jpg" alt="foto-mujer-entrenando">
+        <img src="/assets/gim3.jpg" alt="foto-gimnasio">
     </section>
 
     <!-- DESCRIPCION PRINCIPAL DEL GIMNASIO -->
     <section id="descripcion">
-        <div class="texto-descripcion">
+        <div data-aos="fade-down-right" data-aos-duration="3000" data-aos-delay="500" class="texto-descripcion">
             <h1 class="animate__animated animate__zoomInLeft">Tecnología, datos y entrenadores de máximo nivel.</h1>
             <h3>A través del análisis de datos de tu entrenamiento, buscamos mejorar tus aspectos negativos y fortalecer los positivos para que tengas el mejor rendimiento posible en tu disciplina.</h3>
             <h3>Los mejores entrenadores del mundo, nutricionistas deportivos, las mejores instalaciones y máquinas de última generación.</h3>
@@ -360,7 +360,7 @@
     <!-- RESEÑAS ATLETAS PROFESIONALES -->
     <section id="reseñas">
 
-        <h1>Los mejores atletas profesionales argentinos nos eligen por nuestra experiencia y profesionalismo</h1>
+        <h1 data-aos="zoom-in" data-aos-delay="500">Los mejores atletas profesionales argentinos nos eligen por nuestra experiencia y profesionalismo</h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -524,6 +524,13 @@
 
     <!-- Barra navegación slider -->
     <script src="/js/app.js"></script>
+
+
+    <!--ANIMATE ON SCROLL-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
